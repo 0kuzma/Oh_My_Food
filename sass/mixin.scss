@@ -1,0 +1,12 @@
+//font-family
+@mixin Roboto($size: 24px, $weight: 700) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin Shrikhand($size: 18px, $weight: 400) {
+    font-family: 'Shrikhand', cursive;
+    font-weight: $weight;
+    font-size: $size;
+}

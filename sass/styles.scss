@@ -1,2 +1,154 @@
-@import "../libs/variable.scss"
+@import "../sass/mixin.scss";
+@import "../libs/variable.scss";
+@import "../libs/responsive.scss";
+
+/**** SPINNER LOADING ****/
+
+body {
+    margin: 0;
+}
+
+.main-container {
+    margin: auto;
+    border: 1px solid red;
+    max-width: 768px;
+    height: 100Vh;
+}
+
+/***** Loader page ****/
+
+.container__loader {
+    display: flex;
+    border: 3px solid red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $main-color;
+    animation: fade 0s forwards;
+
+
+.textload {
+    border: 1px solid black;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    &__un{
+        animation: appear 3s linear ;
+        @keyframes appear {
+            0% {
+                opacity: 0%;
+              
+            }
+            50% {
+                opacity: 50%;
+            } 
+            100% {
+                opacity: 100%;
+             
+            }
+        }
+    }
+    &__deux {
+        animation: appearr 8s linear ;
+        margin-top: 45%;
+        color: $secondary-color;
+
+        @keyframes appearr {
+            0% {
+                color: $secondary-color;
+                opacity: 0%;
+                display: none;
+                margin: 0;
+              
+            }
+            30% {
+                color: $secondary-color;
+                opacity: 0%;
+                margin: 0;
+            }
+
+            50% {
+                color: $tertiary-color;
+                opacity: 40%;
+            }
+            80% {
+                color: $tertiary-color;
+                margin-top: 45%;
+                opacity: 45%;
+            } 
+            100% {
+                color: $secondary-color;
+                margin-top: 45%;
+                opacity: 100%;
+            }
+        }
+    }
+}
+
+
+    .spinner {
+        position: absolute;
+        top: 80%;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+     animation: fade 3s forwards;
+     @keyframes fade {
+        from {
+            opacity: 1;
+            display: block;
+        }
+        to {
+            opacity: 0;
+            display: none;
+        }
+        }
+
+        &__loading {
+            position: absolute;
+            height: 220px;
+            width: 220px;
+            border: 5px solid $tertiary-color;
+            border-color: white transparent;
+            border-radius: 50%;
+            animation: spin 2.3s linear infinite;
+            @keyframes spin {
+                from {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .spinner__text {
+                color: $tertiary-color;
+                position: absolute;
+                top: 35%;
+                left: 20%;
+            }
+        }
+    }
+}
+
+/***** Header ****/
+
+header {
+    border: 1px solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    & img {
+        border: 1px solid black;
+        padding: 14px 108px 5px 105px;
+        width: 50%;
+    }
+}
 

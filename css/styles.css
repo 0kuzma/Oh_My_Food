@@ -1,3 +1,136 @@
+/**** SPINNER LOADING ****/
+body {
+  margin: 0;
+}
 
+.main-container {
+  margin: auto;
+  border: 1px solid red;
+  max-width: 768px;
+  height: 100Vh;
+}
+
+/***** Loader page ****/
+.container__loader {
+  display: flex;
+  border: 3px solid red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #9356DC;
+  animation: fade 0s forwards;
+}
+.container__loader .textload {
+  border: 1px solid black;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.container__loader .textload__un {
+  animation: appear 3s linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.container__loader .textload__deux {
+  animation: appearr 8s linear;
+  margin-top: 45%;
+  color: #FF79DA;
+}
+@keyframes appearr {
+  0% {
+    color: #FF79DA;
+    opacity: 0%;
+    display: none;
+    margin: 0;
+  }
+  30% {
+    color: #FF79DA;
+    opacity: 0%;
+    margin: 0;
+  }
+  50% {
+    color: #99E2D0;
+    opacity: 40%;
+  }
+  80% {
+    color: #99E2D0;
+    margin-top: 45%;
+    opacity: 45%;
+  }
+  100% {
+    color: #FF79DA;
+    margin-top: 45%;
+    opacity: 100%;
+  }
+}
+.container__loader .spinner {
+  position: absolute;
+  top: 80%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  animation: fade 3s forwards;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+.container__loader .spinner__loading {
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  border: 5px solid #99E2D0;
+  border-color: white transparent;
+  border-radius: 50%;
+  animation: spin 2.3s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+}
+.container__loader .spinner__loading .spinner__text {
+  color: #99E2D0;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+/***** Header ****/
+header {
+  border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+header img {
+  border: 1px solid black;
+  padding: 14px 108px 5px 105px;
+  width: 50%;
+}
 
 /*# sourceMappingURL=styles.css.map */

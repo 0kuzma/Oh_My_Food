@@ -133,4 +133,25 @@ header img {
   width: 50%;
 }
 
+/***Section Localization****/
+.localization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  background-color: #EAEAEA;
+  width: 100%;
+  height: auto;
+}
+.localization__text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.fa-sharp,
+.fa-location-dot {
+  color: #353535;
+}
+
 /*# sourceMappingURL=styles.css.map */

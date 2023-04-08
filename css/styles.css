@@ -185,8 +185,10 @@ header img {
 }
 
 /****Section Functioning****/
+.functioning {
+  padding: 48px 0px 68px 0px;
+}
 .functioning h2 {
-  margin-top: 48px;
   margin-left: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;

@@ -10,7 +10,7 @@ body {
     margin: auto;
     border: 1px solid red;
     max-width: 768px;
-    height: 100Vh;
+    height: auto;
 }
 
 /*****Spinner Loader page ****/
@@ -136,7 +136,6 @@ body {
 /***** Header ****/
 
 header {
-    border: 1px solid blue;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -144,7 +143,6 @@ header {
     height: auto;
 
     & img {
-        border: 1px solid black;
         padding: 14px 108px 5px 105px;
         width: 50%;
     }
@@ -175,7 +173,6 @@ header {
     background-color: $bg-lightgrey;
     width: 100%;
     padding: 39px 0px 57px 0px;
-    border: 1px solid black;
     &__text {
         h2 {
             @include Roboto($weight: 700);
@@ -192,7 +189,56 @@ header {
         justify-content: center;
         align-items: center;
         button {
-            @include button-color;
+            @include button-violet;
+        }
+    }
+}
+
+/****Section Functioning****/
+.functioning {
+    h2 {
+        margin-top: 48px;
+        margin-left: 20px;
+        @include Roboto;
+    }
+
+    &__info {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+        border: 1px solid red;
+        max-width: 715.49px;
+        margin: 0px 32.51px 24.92px 32.51px;
+        @include button-white;
+        @include Roboto($size: 16px, $weight: 500);
+        .fa-mobile-screen-button,
+        .fa-list-ul {
+            color: $icon-info;
+        }
+        .fa-dumpster{
+            color: $main-color;
+        }
+        .mr-15 {
+            margin-right: 15px;
+        }
+        .mr-8 {
+            margin-right: 8px;
+        }
+        .number {
+            position: absolute;
+            left: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 11px;
+            background-color: $main-color;
+            width: 24px;
+            height: 24px;
+            & p {
+                color: #FFFFFF;
+            }
         }
     }
 }

@@ -1,8 +1,6 @@
 @import "../sass/mixin.scss";
-@import "../libs/variable.scss";
-@import "../libs/responsive.scss";
-
-/**** SPINNER LOADING ****/
+@import "../sass/variable.scss";
+@import "../sass/responsive.scss";
 
 body {
     margin: 0;
@@ -15,7 +13,7 @@ body {
     height: 100Vh;
 }
 
-/***** Loader page ****/
+/*****Spinner Loader page ****/
 
 .container__loader {
     display: flex;
@@ -161,7 +159,6 @@ header {
     background-color: #EAEAEA;
     width: 100%;
     height: auto;
-
     &__text p{
        @include Roboto($size: 16px, $weight: 500);
     }
@@ -171,4 +168,31 @@ header {
 .fa-location-dot
     {
     color: #353535;
+}
+
+/****Section CTA****/
+.cta {
+    background-color: $bg-lightgrey;
+    width: 100%;
+    padding: 39px 0px 57px 0px;
+    border: 1px solid black;
+    &__text {
+        h2 {
+            @include Roboto($weight: 700);
+            text-align: center;
+        }
+        h3 {
+            @include Roboto($size: 18px ,$weight: 300);
+            text-align: center;
+            margin-bottom: 27px;
+        }
+    } 
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            @include button-color;
+        }
+    }
 }

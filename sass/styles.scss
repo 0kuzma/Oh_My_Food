@@ -140,7 +140,8 @@ header {
     background-color: #FFFFFF;
     padding: 48px 0px 68px 0px;
     h2 {
-        margin-left: 20px;
+        
+        margin: 0px 0px 26px 20px; 
         @include Roboto;
     }
 

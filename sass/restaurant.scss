@@ -1,0 +1,32 @@
+@import "../sass/mixin.scss";
+@import "../sass/variable.scss";
+@import "../sass/responsive.scss";
+
+body {
+    margin: 0;
+  }
+  
+  .main-container {
+    margin: auto;
+    border: 1px solid red;
+    max-width: 768px;
+    height: 200vh;
+  }
+  
+  /***** Header ****/
+  header {
+    padding: 14px 0px 5px 0px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+  }
+  header i {
+    padding-left: 20px;
+  }
+  header img {
+    margin: auto;
+    width: 50%;
+  }

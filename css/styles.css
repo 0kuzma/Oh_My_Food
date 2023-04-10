@@ -230,4 +230,54 @@ header img {
   margin: 0px 0px 12px 13px;
 }
 
+/****Section Footer****/
+footer {
+  background-color: #353535;
+  padding: 22px 0px 22px 25px;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+footer .footer__up {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+}
+footer .footer__up .list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 11px;
+  color: #FFFFFF;
+}
+footer .footer__up .list i {
+  color: #FFFFFF;
+  width: 11px;
+}
+footer .footer__up .list p {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer .footer__down {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 7px;
+  padding: 0;
+}
+footer .footer__down li {
+  list-style: none;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */

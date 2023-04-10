@@ -140,7 +140,6 @@ header {
     background-color: #FFFFFF;
     padding: 48px 0px 68px 0px;
     h2 {
-        
         margin: 0px 0px 26px 20px; 
         @include Roboto;
     }
@@ -185,8 +184,8 @@ header {
         }
     }
 }
-    /****Section restaurant****/
 
+    /****Section restaurant****/
 .restaurant {
     border: 1px solid purple;
     background-color: $bg-lightgrey;
@@ -221,3 +220,48 @@ header {
        }
     }
 }
+
+/****Section Footer****/
+footer {
+    background-color: $bg-footer;
+    padding: 22px 0px 22px 25px;
+     h2 {
+        @include Shrikhand;
+    }
+    .footer__up{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin: 0;
+        padding: 0;
+    
+        .list {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 11px;
+            color: $bg-white;
+            i {
+                color: $bg-white;
+                width: 11px;
+            }
+            p {
+               margin: 0px;
+               @include Roboto($size: 16px, $weight: 500);
+            }
+        }
+    }
+    .footer__down {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 7px;
+        padding: 0;
+        & li {
+            list-style: none;
+            color: $bg-white;
+            @include Roboto($size: 16px, $weight: 400);
+
+        } 
+    }
+    }

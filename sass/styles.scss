@@ -226,7 +226,7 @@ footer {
     background-color: $bg-footer;
     padding: 22px 0px 22px 25px;
      h2 {
-        @include Shrikhand;
+        @include Shrikhand($color: white);
     }
     .footer__up{
         display: flex;

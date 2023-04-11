@@ -80,6 +80,7 @@ header img {
   font-size: 16px;
 }
 .relative-img .absolute__card {
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
   background-color: #FFFFFF;
 }

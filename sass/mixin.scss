@@ -5,11 +5,11 @@
     font-size: $size;
 }
 
-@mixin Shrikhand($size: 18px, $weight: 400) {
+@mixin Shrikhand($size: 18px, $weight: 400, $color: black) {
     font-family: 'Shrikhand', cursive;
     font-weight: $weight;
     font-size: $size;
-    color: white;
+    color: $color;
 }
 
 

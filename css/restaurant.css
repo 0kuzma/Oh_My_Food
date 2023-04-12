@@ -4,15 +4,12 @@ body {
 
 .main-container {
   margin: auto;
-  border: 1px solid red;
   max-width: 768px;
-  height: 200vh;
 }
 
 /***** Header ****/
 header {
   padding: 14px 0px 5px 0px;
-  border: 1px solid black;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -40,13 +37,12 @@ header img {
 }
 .relative-img .absolute {
   background-color: #F6F6F6;
-  border: 1px solid blue;
   height: auto;
   width: 100%;
   position: absolute;
   top: 75%;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
 }
 .relative-img .absolute__title {
   display: flex;
@@ -66,7 +62,6 @@ header img {
 }
 .relative-img .absolute__foodChoice {
   margin: 42px 13px 40px 13px;
-  border: 1px solid red;
 }
 .relative-img .absolute__soustitle {
   border-bottom: 3px solid #99E2D0;
@@ -106,6 +101,74 @@ header img {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15.04px;
+}
+.relative-img .absolute .button-command {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.relative-img .absolute .button-command button {
+  border: none;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 186px;
+  height: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 13px 16px;
+}
+
+/****Section Footer****/
+footer {
+  background-color: #353535;
+  padding: 22px 0px 22px 25px;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+footer .footer__up {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+}
+footer .footer__up .list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 11px;
+  color: #FFFFFF;
+}
+footer .footer__up .list i {
+  color: #FFFFFF;
+  width: 11px;
+}
+footer .footer__up .list p {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+footer .footer__down {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 7px;
+  padding: 0;
+}
+footer .footer__down li {
+  list-style: none;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=restaurant.css.map */

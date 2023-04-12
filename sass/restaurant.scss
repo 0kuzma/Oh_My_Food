@@ -8,15 +8,12 @@ body {
   
   .main-container {
     margin: auto;
-    border: 1px solid red;
     max-width: 768px;
-    height: 200vh;
   }
   
   /***** Header ****/
   header {
     padding: 14px 0px 5px 0px;
-    border: 1px solid black;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -42,13 +39,12 @@ body {
         }
         .absolute {
             background-color: $bg-lightgrey;
-            border: 1px solid blue;
             height: auto;
             width: 100%;
             position: absolute;
             top: 75%;
-            border-top-right-radius: 30px;
-            border-top-left-radius: 30px;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
             &__title {
                 display: flex;
                 justify-content: space-between;
@@ -64,7 +60,6 @@ body {
             }
             &__foodChoice {
                 margin: 42px 13px 40px 13px;
-                border: 1px solid red;
             }
             &__soustitle {
                 border-bottom: 3px solid $border-soustitle;
@@ -97,8 +92,64 @@ body {
                     }
                 }
             }
+            .button-command {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 40px;
+                button {
+                    @include button-restaurant;
+                    @include Roboto($size: 16px, $weight: 500);
+                    padding: 13px 16px;
+                    
+                }
+            }
         }
   } 
+
+  /****Section Footer****/
+footer {
+    background-color: $bg-footer;
+    padding: 22px 0px 22px 25px;
+     h2 {
+        @include Shrikhand($color: white);
+    }
+    .footer__up{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin: 0;
+        padding: 0;
+    
+        .list {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 11px;
+            color: $bg-white;
+            i {
+                color: $bg-white;
+                width: 11px;
+            }
+            p {
+               margin: 0px;
+               @include Roboto($size: 16px, $weight: 500);
+            }
+        }
+    }
+    .footer__down {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 7px;
+        padding: 0;
+        & li {
+            list-style: none;
+            color: $bg-white;
+            @include Roboto($size: 16px, $weight: 400);
+
+        } 
+    }
+    }
 
     
 

@@ -2,6 +2,15 @@ body {
   margin: 0;
 }
 
+.link,
+.link:focus {
+  outline: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  color: black;
+  border: 0px solid white;
+}
+
 .main-container {
   margin: auto;
   border: 1px solid red;
@@ -95,14 +104,13 @@ header img {
   font-size: 16px;
 }
 
-.fa-sharp,
 .fa-location-dot {
   color: #353535;
 }
 
 /****Section CTA****/
 .cta {
-  background-color: #f7f7f7;
+  background-color: #F6F6F6;
   width: 100%;
   padding: 39px 0px 57px 0px;
 }
@@ -192,7 +200,7 @@ header img {
 /****Section restaurant****/
 .restaurant {
   border: 1px solid purple;
-  background-color: #f7f7f7;
+  background-color: #F6F6F6;
   padding: 54px 15px 66px 15px;
 }
 .restaurant h2 {
@@ -222,6 +230,11 @@ header img {
   font-weight: 700;
   font-size: 18px;
   margin: 16px 0px 5px 13px;
+}
+.restaurant__card .heart {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
 }
 .restaurant__card h4 {
   font-family: "Roboto", sans-serif;

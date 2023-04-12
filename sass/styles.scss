@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+.link,
+.link:focus{
+    @include link-page;
+}
+
 .main-container {
     margin: auto;
     border: 1px solid red;
@@ -103,7 +108,6 @@ header {
     }
 }
 
-.fa-sharp,
 .fa-location-dot
     {
     color: #353535;
@@ -214,6 +218,12 @@ header {
         @include Roboto($size: 18px);
         margin: 16px 0px 5px 13px;
        } 
+ 
+       .heart {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+       }
        & h4 {
         @include Roboto($size: 17px, $weight: 300);
         margin: 0px 0px 12px 13px;

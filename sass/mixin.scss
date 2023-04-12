@@ -41,3 +41,14 @@
     color: white;
 }
 
+
+// link 
+
+@mixin link-page {
+    outline: none !important;
+    border: none !important;        
+    text-decoration: none !important;
+    color: black;
+    border: 0px solid white;
+}
+

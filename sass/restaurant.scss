@@ -34,7 +34,7 @@ body {
     position: relative;
     img {
         width: 100%;
-        height: auto;
+        height: 400px;
         object-fit: cover;
         }
         .absolute {
@@ -42,7 +42,7 @@ body {
             height: auto;
             width: 100%;
             position: absolute;
-            top: 75%;
+            top: 85%;
             border-top-right-radius: 40px;
             border-top-left-radius: 40px;
             &__title {

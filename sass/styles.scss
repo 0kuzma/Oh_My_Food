@@ -13,7 +13,6 @@ body {
 
 .main-container {
     margin: auto;
-    border: 1px solid red;
     max-width: 768px;
     height: 200vh;
 }
@@ -22,7 +21,6 @@ body {
 
 .container__loader {
     display: flex;
-    border: 3px solid red;
     position: absolute;
     z-index: 100;
     opacity: 1;
@@ -154,7 +152,6 @@ header {
         justify-content: center;
         align-items: center;
         gap: 27px;
-        border: 1px solid red;
         max-width: 715.49px;
         margin: 0px 32.51px 24.92px 32.51px;
         @include button-white;
@@ -191,7 +188,6 @@ header {
 
     /****Section restaurant****/
 .restaurant {
-    border: 1px solid purple;
     background-color: $bg-lightgrey;
     padding: 54px 15px 66px 15px;
     h2 {
@@ -204,7 +200,6 @@ header {
         border-radius: 15px;
         margin-bottom: 18px;
         height: auto;
-        border: 1px solid blue;
         max-width: 733px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         & img {

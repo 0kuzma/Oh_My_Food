@@ -1,3 +1,35 @@
-
+@media (min-width: 769px) {
+  .main-container {
+    border: 1px solid red;
+    max-width: 1440px;
+  }
+  header img {
+    width: 20%;
+  }
+  /*****Section CTA****/
+  .cta {
+    padding: 30px 0px 30px 0px;
+  }
+  .cta__text h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+  }
+  /***Section Functioning***/
+  .functioning h2 {
+    width: 1128px;
+    margin: auto;
+    padding-left: 32.51px;
+    padding-bottom: 25px;
+  }
+  .functioning .flex-row {
+    display: flex;
+    justify-content: center;
+  }
+  .functioning__info {
+    width: 322.49px;
+  }
+}
 
 /*# sourceMappingURL=homepage-query.css.map */

@@ -101,7 +101,7 @@ header {
     background-color: #EAEAEA;
     width: 100%;
     height: auto;
-    &__text p{
+    &__text h2{
        @include Roboto($size: 16px, $weight: 500);
     }
 }

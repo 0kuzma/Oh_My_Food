@@ -1,6 +1,6 @@
 @import "../sass/mixin.scss";
 @import "../sass/variable.scss";
-@import "../sass/responsive.scss";
+
 
 body {
     margin: 0;
@@ -14,7 +14,7 @@ body {
 .main-container {
     margin: auto;
     max-width: 768px;
-    height: 200vh;
+    height: auto;
 }
 
 /*****Spinner Loader page ****/

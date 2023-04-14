@@ -14,7 +14,7 @@ body {
 .main-container {
   margin: auto;
   max-width: 768px;
-  height: 200vh;
+  height: auto;
 }
 
 /*****Spinner Loader page ****/

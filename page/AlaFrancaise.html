@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c7f9ac5220.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="stylesheet" href="../css/restaurant-query.css">
     <title>Restaurant</title>
 </head>
 <body>
     <div class="main-container">
         <!--Header-->
         <header>
-            <a href="../index.html">
+            <a href="../index.html" class="link">
                 <i class="fa-sharp fa-solid fa-arrow-left fa-2xl"></i>
             </a>
             <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood centrer en haut de la page">
@@ -25,6 +26,110 @@
        <main>
         <div class="relative-img">
             <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+
+                     <!--hidden-absolute-->
+                     <div class="absolute-hidden">
+                        <div class="absolute__title">
+                            <h2>À la française</h2>
+                            <i class="fa-sharp fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <!--Entrées-->
+                        <section class="absolute__foodChoice">
+                            <div class="absolute__soustitle">
+                                <h2>ENTRÉES</h2>
+                            </div>
+                            <article class="absolute__card">
+                                <h3>Tartare de poulpe acidulé</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Aux zestes d'orange</li>
+                                    <li class="price__ff">25€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Velouté de légumes d'antan</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Carotte, panais, topinambour</li>
+                                    <li class="price__ff">35€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Soupe à l'oignon</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Revisitée</li>
+                                    <li class="price__ff">20€</li>
+                                </ul>
+                            </article>
+                        </section>
+                        
+                        <!--Plat-->
+                        <section class="absolute__foodChoice">
+                            <div class="absolute__soustitle">
+                                <h2>PLATS</h2>
+                            </div>
+                            <article class="absolute__card">
+                                <h3>Coquilles Saint-Jacques</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Accompagnées d'une purée de panais</li>
+                                    <li class="price__ff">40€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Magret de canard</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et parmentier de pommes de terre</li>
+                                    <li class="price__ff">35€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Sur son lit de gnocchis aux légumes</li>
+                                    <li class="price__ff">44€</li>
+                                </ul>
+                            </article>
+                        </section>
+        
+                        <!--Dessert-->
+                        <section class="absolute__foodChoice">
+                            <div class="absolute__soustitle">
+                                <h2>DESSERTS</h2>
+                            </div>
+                            <article class="absolute__card">
+                                <h3>Pétales de violettes glacés</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et purée de noisettes</li>
+                                    <li class="price__ff">18€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Fondant au chocolat</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Revisité</li>
+                                    <li class="price__ff">22€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Millefeuille croustillant</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Myrtilles et pâte d’amande</li>
+                                    <li class="price__ff">23€</li>
+                                </ul>
+                            </article>
+                        </section>
+        
+                        <!--Button-->
+                        <div class="button-command">
+                            <button>Commander</button>
+                        </div>
+                    </div>
+
+                    <!--absolute visible-->
             <div class="absolute">
                 <div class="absolute__title">
                     <h2>À la française</h2>
@@ -38,7 +143,7 @@
                     <article class="absolute__card">
                         <h3>Tartare de poulpe acidulé</h3>
                         <ul class="price">
-                            <li>Aux zestes d'orange</li>
+                            <li class="ellipsis">Aux zestes d'orange</li>
                             <li class="price__ff">25€</li>
                         </ul>
                     </article>
@@ -46,7 +151,7 @@
                     <article class="absolute__card">
                         <h3>Velouté de légumes d'antan</h3>
                         <ul class="price">
-                            <li>Carotte, panais, topinambour</li>
+                            <li class="ellipsis">Carotte, panais, topinambour</li>
                             <li class="price__ff">35€</li>
                         </ul>
                     </article>
@@ -54,7 +159,7 @@
                     <article class="absolute__card">
                         <h3>Soupe à l'oignon</h3>
                         <ul class="price">
-                            <li>Revisitée</li>
+                            <li class="ellipsis">Revisitée</li>
                             <li class="price__ff">20€</li>
                         </ul>
                     </article>
@@ -68,7 +173,7 @@
                     <article class="absolute__card">
                         <h3>Coquilles Saint-Jacques</h3>
                         <ul class="price">
-                            <li>Accompagnées d'une purée de panais</li>
+                            <li class="ellipsis">Accompagnées d'une purée de panais</li>
                             <li class="price__ff">40€</li>
                         </ul>
                     </article>
@@ -76,7 +181,7 @@
                     <article class="absolute__card">
                         <h3>Magret de canard</h3>
                         <ul class="price">
-                            <li>Et parmentier de pommes de terre</li>
+                            <li class="ellipsis">Et parmentier de pommes de terre</li>
                             <li class="price__ff">35€</li>
                         </ul>
                     </article>
@@ -84,7 +189,7 @@
                     <article class="absolute__card">
                         <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                         <ul class="price">
-                            <li>Sur son lit de gnocchis aux légumes</li>
+                            <li class="ellipsis">Sur son lit de gnocchis aux légumes</li>
                             <li class="price__ff">44€</li>
                         </ul>
                     </article>
@@ -98,7 +203,7 @@
                     <article class="absolute__card">
                         <h3>Pétales de violettes glacés</h3>
                         <ul class="price">
-                            <li>Et purée de noisettes</li>
+                            <li class="ellipsis">Et purée de noisettes</li>
                             <li class="price__ff">18€</li>
                         </ul>
                     </article>
@@ -106,7 +211,7 @@
                     <article class="absolute__card">
                         <h3>Fondant au chocolat</h3>
                         <ul class="price">
-                            <li>Revisité</li>
+                            <li class="ellipsis">Revisité</li>
                             <li class="price__ff">22€</li>
                         </ul>
                     </article>
@@ -114,7 +219,7 @@
                     <article class="absolute__card">
                         <h3>Millefeuille croustillant</h3>
                         <ul class="price">
-                            <li>Myrtilles et pâte d’amande</li>
+                            <li class="ellipsis">Myrtilles et pâte d’amande</li>
                             <li class="price__ff">23€</li>
                         </ul>
                     </article>
@@ -124,28 +229,29 @@
                 <div class="button-command">
                     <button>Commander</button>
                 </div>
-
-                <!--Section Footer-->
-                <footer>
-                        <h2>ohmyfood</h2>
-                        <ul class="footer__up">
-                            <li class="list">
-                                <i class="fa-sharp fa-solid fa-utensils"></i>
-                                <p>Proposer un restaurant</p>
-                            </li>
-                            <li class="list">
-                                <i class="fa-sharp fa-solid fa-handshake-angle"></i>
-                                <p>Devenir partenaire</p>
-                            </li>
-                        </ul>
-                        <ul class="footer__down">
-                            <li>Mentions légales</li>
-                            <li>Contact</li>
-                        </ul>
-                </footer>
             </div>
         </div>
     </main>
 </div>
+<!--Section Footer-->
+<footer>
+    <h2>ohmyfood</h2>
+    <div class="desktop-footer">
+        <ul class="footer__up">
+            <li class="list">
+                <i class="fa-sharp fa-solid fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </li>
+            <li class="list">
+                <i class="fa-sharp fa-solid fa-handshake-angle"></i>
+                <p>Devenir partenaire</p>
+            </li>
+        </ul>
+        <ul class="footer__down">
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+ </footer>
 </body>
 </html>

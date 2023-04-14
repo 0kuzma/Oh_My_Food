@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c7f9ac5220.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="stylesheet" href="../css/restaurant-query.css">
     <title>Restaurant</title>
 </head>
 <body>
     <div class="main-container">
         <!--Header-->
         <header>
-            <i class="fa-sharp fa-solid fa-arrow-left fa-2xl"></i>
+            <a href="../index.html" class="link">
+                <i class="fa-sharp fa-solid fa-arrow-left fa-2xl"></i>
+            </a>
             <img src="../images/logo/ohmyfood.png" alt="logo ohmyfood centrer en haut de la page">
         </header>
 
@@ -23,6 +26,110 @@
        <main>
         <div class="relative-img">
             <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+
+                     <!--hidden-absolute-->
+                     <div class="absolute-hidden">
+                        <div class="absolute__title">
+                            <h2>Le délice des sens</h2>
+                            <i class="fa-sharp fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <!--Entrées-->
+                        <section class="absolute__foodChoice">
+                            <div class="absolute__soustitle">
+                                <h2>ENTRÉES</h2>
+                            </div>
+                            <article class="absolute__card">
+                                <h3>Tartare de thon</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Assaisonné au yuzu</li>
+                                    <li class="price__ff">25€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Bouchée de homard croustillant </h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et sa farandole de petits légumes</li>
+                                    <li class="price__ff">35€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et sa crème de truffe</li>
+                                    <li class="price__ff">40€</li>
+                                </ul>
+                            </article>
+                        </section>
+                        
+                        <!--Plat-->
+                        <section class="absolute__foodChoice">
+                            <div class="absolute__soustitle">
+                                <h2>PLATS</h2>
+                            </div>
+                            <article class="absolute__card">
+                                <h3>Poulet rôti aux herbes de Provence </h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et sa crème de truffe</li>
+                                    <li class="price__ff">40€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Langouste rôtie</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et ses légumes de saison</li>
+                                    <li class="price__ff">35€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Côte de bœuf Angus </h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Et sa purée de panais</li>
+                                    <li class="price__ff">44€</li>
+                                </ul>
+                            </article>
+                        </section>
+        
+                        <!--Dessert-->
+                        <section class="absolute__foodChoice">
+                            <div class="absolute__soustitle">
+                                <h2>DESSERTS</h2>
+                            </div>
+                            <article class="absolute__card">
+                                <h3>Œuf au plat</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Assaisonné à la truffe sur lit de caviar</li>
+                                    <li class="price__ff">76€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Crème brulée</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">Revisitée</li>
+                                    <li class="price__ff">22€</li>
+                                </ul>
+                            </article>
+        
+                            <article class="absolute__card">
+                                <h3>Tiramisu</h3>
+                                <ul class="price">
+                                    <li class="ellipsis">À la noisette</li>
+                                    <li class="price__ff">23€</li>
+                                </ul>
+                            </article>
+                        </section>
+        
+                        <!--Button-->
+                        <div class="button-command">
+                            <button>Commander</button>
+                        </div>
+                    </div>
+
+                    <!--absolute-visible-->
             <div class="absolute">
                 <div class="absolute__title">
                     <h2>Le délice des sens</h2>
@@ -36,7 +143,7 @@
                     <article class="absolute__card">
                         <h3>Tartare de thon</h3>
                         <ul class="price">
-                            <li>Assaisonné au yuzu</li>
+                            <li class="ellipsis">Assaisonné au yuzu</li>
                             <li class="price__ff">25€</li>
                         </ul>
                     </article>
@@ -44,7 +151,7 @@
                     <article class="absolute__card">
                         <h3>Bouchée de homard croustillant </h3>
                         <ul class="price">
-                            <li>Et sa farandole de petits légumes</li>
+                            <li class="ellipsis">Et sa farandole de petits légumes</li>
                             <li class="price__ff">35€</li>
                         </ul>
                     </article>
@@ -52,7 +159,7 @@
                     <article class="absolute__card">
                         <h3>Poulet rôti aux herbes de Provence </h3>
                         <ul class="price">
-                            <li>Et sa crème de truffe</li>
+                            <li class="ellipsis">Et sa crème de truffe</li>
                             <li class="price__ff">40€</li>
                         </ul>
                     </article>
@@ -66,7 +173,7 @@
                     <article class="absolute__card">
                         <h3>Poulet rôti aux herbes de Provence </h3>
                         <ul class="price">
-                            <li>Et sa crème de truffe</li>
+                            <li class="ellipsis">Et sa crème de truffe</li>
                             <li class="price__ff">40€</li>
                         </ul>
                     </article>
@@ -74,7 +181,7 @@
                     <article class="absolute__card">
                         <h3>Langouste rôtie</h3>
                         <ul class="price">
-                            <li>Et ses légumes de saison</li>
+                            <li class="ellipsis">Et ses légumes de saison</li>
                             <li class="price__ff">35€</li>
                         </ul>
                     </article>
@@ -82,7 +189,7 @@
                     <article class="absolute__card">
                         <h3>Côte de bœuf Angus </h3>
                         <ul class="price">
-                            <li>Et sa purée de panais</li>
+                            <li class="ellipsis">Et sa purée de panais</li>
                             <li class="price__ff">44€</li>
                         </ul>
                     </article>
@@ -96,7 +203,7 @@
                     <article class="absolute__card">
                         <h3>Œuf au plat</h3>
                         <ul class="price">
-                            <li>Assaisonné à la truffe sur lit de caviar</li>
+                            <li class="ellipsis">Assaisonné à la truffe sur lit de caviar</li>
                             <li class="price__ff">76€</li>
                         </ul>
                     </article>
@@ -104,7 +211,7 @@
                     <article class="absolute__card">
                         <h3>Crème brulée</h3>
                         <ul class="price">
-                            <li>Revisitée</li>
+                            <li class="ellipsis">Revisitée</li>
                             <li class="price__ff">22€</li>
                         </ul>
                     </article>
@@ -112,7 +219,7 @@
                     <article class="absolute__card">
                         <h3>Tiramisu</h3>
                         <ul class="price">
-                            <li>À la noisette</li>
+                            <li class="ellipsis">À la noisette</li>
                             <li class="price__ff">23€</li>
                         </ul>
                     </article>
@@ -122,28 +229,29 @@
                 <div class="button-command">
                     <button>Commander</button>
                 </div>
-
-                <!--Section Footer-->
-                <footer>
-                        <h2>ohmyfood</h2>
-                        <ul class="footer__up">
-                            <li class="list">
-                                <i class="fa-sharp fa-solid fa-utensils"></i>
-                                <p>Proposer un restaurant</p>
-                            </li>
-                            <li class="list">
-                                <i class="fa-sharp fa-solid fa-handshake-angle"></i>
-                                <p>Devenir partenaire</p>
-                            </li>
-                        </ul>
-                        <ul class="footer__down">
-                            <li>Mentions légales</li>
-                            <li>Contact</li>
-                        </ul>
-                </footer>
             </div>
         </div>
     </main>
 </div>
+ <!--Section Footer-->
+ <footer>
+    <h2>ohmyfood</h2>
+    <div class="desktop-footer">
+    <ul class="footer__up">
+        <li class="list">
+            <i class="fa-sharp fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+        </li>
+        <li class="list">
+            <i class="fa-sharp fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+        </li>
+    </ul>
+    <ul class="footer__down">
+        <li>Mentions légales</li>
+        <li>Contact</li>
+    </ul>
+</footer>
+</body>
 </body>
 </html>

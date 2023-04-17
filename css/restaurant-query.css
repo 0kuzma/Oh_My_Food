@@ -1,17 +1,68 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "../sass/responsive.scss";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   ../../sass/restaurant-query.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"../sass/responsive.scss\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   ../../sass/restaurant-query.scss 3:9  root stylesheet";
+@media (min-width: 769px) {
+  .main-container {
+    max-width: 1440px;
+  }
+  .link {
+    outline: none !important;
+    border: none !important;
+    text-decoration: none !important;
+    color: black;
+    border: 0px solid white;
+  }
+  header img {
+    width: 25%;
+  }
+  .relative-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .relative-img .absolute {
+    max-width: 1055px;
+  }
+  .relative-img .absolute .absolute__title {
+    justify-content: center;
+  }
+  .relative-img .absolute .absolute__foodChoice {
+    margin-left: 210px;
+    margin-right: 211px;
+  }
+  /***Section Footer***/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    height: 114px;
+    padding: 0;
+  }
+  footer h2 {
+    padding-top: 67px;
+    padding-right: 26.42px;
+    padding-bottom: 30px;
+    padding-left: 96px;
+  }
+  footer .desktop-footer {
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  footer .desktop-footer .footer__up {
+    padding-top: 64px;
+    flex-direction: row;
+    gap: 17px;
+  }
+  footer .desktop-footer .footer__up .list p {
+    margin-left: 10px;
+  }
+  footer .desktop-footer .footer__down {
+    padding-top: 64px;
+    flex-direction: row;
+    gap: 17px;
+  }
 }
+
+/*# sourceMappingURL=restaurant-query.css.map */

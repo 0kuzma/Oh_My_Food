@@ -134,6 +134,9 @@ header {
         button {
             @include button-violet;
         }
+        button:hover {
+            @include button-hov;
+        }
     }
 }
 

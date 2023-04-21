@@ -138,6 +138,12 @@ header img {
   color: #FFFFFF;
   padding: 13px 18.75px 13px 18.75px;
 }
+.cta__button button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(329deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  transform: matrix(1, 0, 0, 1.04, 0, 0);
+}
 
 /****Section Functioning****/
 .functioning {

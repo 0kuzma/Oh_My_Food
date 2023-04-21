@@ -23,6 +23,13 @@
   }
   .relative-img .absolute .absolute__title {
     justify-content: center;
+    gap: 0px;
+  }
+  .relative-img .absolute .absolute__title .size {
+    left: 63%;
+  }
+  .relative-img .absolute .absolute__title .heart-checkbox:checked + .heart {
+    left: 63%;
   }
   .relative-img .absolute .absolute__foodChoice {
     margin-left: 210px;

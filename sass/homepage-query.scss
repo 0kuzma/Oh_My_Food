@@ -40,6 +40,26 @@
             width: 322.49px;
         }
     }
+
+    /***Section Restaurant***/
+    .restaurant {
+        padding: 29px 175px 29px 175px;
+        .flex-resto {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            width: 100%;
+            .link {
+                width: 100%;
+            }
+        }
+        &__card {
+            max-width: 490px;
+            .heart {
+                padding-right: 0px;
+            }
+        }
+    }
 }
 
 

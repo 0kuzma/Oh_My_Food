@@ -47,10 +47,22 @@
     width: 100%;
     margin: auto;
   }
+  .restaurant__card .news__bg {
+    left: 75%;
+  }
+  /***Section Footer***/
+}
+@media (min-width: 769px) and (max-width: 1105px) {
+  .restaurant__card .news__bg {
+    transform: translate(-50%, 0%);
+  }
+}
+@media (min-width: 769px) {
   .restaurant__card .heart {
     padding-right: 0px;
   }
-  /***Section Footer***/
+}
+@media (min-width: 769px) {
   footer {
     display: flex;
     flex-direction: row-reverse;

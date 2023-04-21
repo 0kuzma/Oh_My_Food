@@ -30,6 +30,25 @@
   .functioning__info {
     width: 322.49px;
   }
+  /***Section Restaurant***/
+  .restaurant {
+    padding: 29px 175px 29px 175px;
+  }
+  .restaurant .flex-resto {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+  }
+  .restaurant .flex-resto .link {
+    width: 100%;
+  }
+  .restaurant__card {
+    max-width: 490px;
+  }
+  .restaurant__card .heart {
+    padding-right: 0px;
+  }
 }
 
 /*# sourceMappingURL=homepage-query.css.map */

@@ -12,6 +12,7 @@ body {
 }
 
 .main-container {
+    position: relative;
     margin: auto;
     max-width: 768px;
     height: auto;
@@ -19,63 +20,51 @@ body {
 
 /*****Spinner Loader page ****/
 
-.container__loader {
-    display: flex;
+/***.spinner {
+    background-color: #EAEAEA;
     position: absolute;
     z-index: 100;
-    opacity: 1;
+    opacity: 0;
     top: 0;
+    left: 0;
     bottom: 0;
     right: 0;
-    left: 0;
-    background-color: $main-color;
-    animation: fade 8s forwards;
-
-    .spinner {
-        position: absolute;
-        top: 80%;
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        opacity: 1;
-     animation: fade 8s forwards;
-     @keyframes fade {
+    animation: bg 3.3s linear;
+    @keyframes bg {
         from {
-            opacity: 1;
-            display: block;
+            opacity: 100%;
         }
         to {
-            opacity: 0;
-            display: none;
-        }
-        }
-
-        &__loading {
-            position: absolute;
-            height: 220px;
-            width: 220px;
-            border: 5px solid $tertiary-color;
-            border-color: white transparent;
-            border-radius: 50%;
-            animation: spin 2.3s linear infinite;
-            @keyframes spin {
-                from {
-                    transform: rotate(360deg);
-                }
-            }
-
-            .spinner__text {
-                color: $tertiary-color;
-                position: absolute;
-                top: 35%;
-                left: 20%;
-            }
+            opacity: 0%;
+            z-index: -1;
         }
     }
-}
+&__spin {
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    left: 35%;
+    right: 0;
+    bottom: 50%;
+    top: 50%;
+    height: 220px;
+    width: 220px;
+    border: 5px solid $tertiary-color;
+    border-color: peru transparent;
+    border-radius: 50%;
+    animation: spin 3.3s linear;
+    @keyframes spin {
+        from {
+            opacity: 100%;
+            transform: rotate(360deg);
+        }
+        to {
+            opacity: 0%;
+            z-index: -1;
+        }
+    }
+    } 
+}  ***/
 
 /***** Header ****/
 

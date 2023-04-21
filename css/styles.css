@@ -12,67 +12,58 @@ body {
 }
 
 .main-container {
+  position: relative;
   margin: auto;
   max-width: 768px;
   height: auto;
 }
 
 /*****Spinner Loader page ****/
-.container__loader {
-  display: flex;
-  position: absolute;
-  z-index: 100;
-  opacity: 1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #9356DC;
-  animation: fade 8s forwards;
-}
-.container__loader .spinner {
-  position: absolute;
-  top: 80%;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  opacity: 1;
-  animation: fade 8s forwards;
-}
-@keyframes fade {
-  from {
-    opacity: 1;
-    display: block;
-  }
-  to {
+/***.spinner {
+    background-color: #EAEAEA;
+    position: absolute;
+    z-index: 100;
     opacity: 0;
-    display: none;
-  }
-}
-.container__loader .spinner__loading {
-  position: absolute;
-  height: 220px;
-  width: 220px;
-  border: 5px solid #99E2D0;
-  border-color: white transparent;
-  border-radius: 50%;
-  animation: spin 2.3s linear infinite;
-}
-@keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-}
-.container__loader .spinner__loading .spinner__text {
-  color: #99E2D0;
-  position: absolute;
-  top: 35%;
-  left: 20%;
-}
-
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation: bg 3.3s linear;
+    @keyframes bg {
+        from {
+            opacity: 100%;
+        }
+        to {
+            opacity: 0%;
+            z-index: -1;
+        }
+    }
+&__spin {
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    left: 35%;
+    right: 0;
+    bottom: 50%;
+    top: 50%;
+    height: 220px;
+    width: 220px;
+    border: 5px solid $tertiary-color;
+    border-color: peru transparent;
+    border-radius: 50%;
+    animation: spin 3.3s linear;
+    @keyframes spin {
+        from {
+            opacity: 100%;
+            transform: rotate(360deg);
+        }
+        to {
+            opacity: 0%;
+            z-index: -1;
+        }
+    }
+    } 
+}  ***/
 /***** Header ****/
 header {
   width: 100%;

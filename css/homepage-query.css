@@ -33,18 +33,19 @@
   /***Section Restaurant***/
   .restaurant {
     padding: 29px 175px 29px 175px;
+    margin: auto;
   }
   .restaurant .flex-resto {
     display: flex;
-    justify-content: center;
+    margin-bottom: 30px;
     gap: 100px;
-    width: 100%;
   }
   .restaurant .flex-resto .link {
     width: 100%;
   }
   .restaurant__card {
-    max-width: 490px;
+    width: 100%;
+    margin: auto;
   }
   .restaurant__card .heart {
     padding-right: 0px;

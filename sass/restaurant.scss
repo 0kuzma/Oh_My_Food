@@ -42,6 +42,7 @@ main {
         .absolute-hidden {
             opacity: 0;
         }
+        // menu
         .absolute {
             background-color: $bg-lightgrey;
             height: auto;
@@ -95,7 +96,8 @@ main {
                     .price__ff {
                         @include Roboto($size: 15.04px)
                     }
-                }
+                }                
+
             }
             .button-command {
                 display: flex;
@@ -105,7 +107,9 @@ main {
                     @include button-restaurant;
                     @include Roboto($size: 16px, $weight: 500);
                     padding: 13px 16px;
-                    
+                }
+                button:hover {
+                    @include button-hov;
                 }
             }
         }

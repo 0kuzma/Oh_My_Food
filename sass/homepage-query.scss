@@ -60,6 +60,42 @@
             }
         }
     }
+
+    /***Section Footer***/
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 1440px;
+        margin: auto;
+        height: 114px;
+        padding: 0;
+        h2 {
+            padding-top: 67px;
+            padding-right: 26.42px;
+            padding-bottom: 30px;
+            padding-left: 96px;
+        }
+        .desktop-footer {
+            display: flex;
+            gap: 70px;
+            flex-direction: row;
+            align-items: baseline;
+        .footer__up {
+            padding-top:64px ;
+            flex-direction: row;
+            gap: 17px;
+            .list p {
+                margin-left: 10px;
+            }
+        }
+        .footer__down {
+            padding-top: 64px;
+            flex-direction: row;
+            gap: 17px;
+        }
+    }
+    }
 }
 
 

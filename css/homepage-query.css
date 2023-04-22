@@ -1,5 +1,6 @@
 @media (min-width: 769px) {
   .main-container {
+    overflow: hidden;
     border: 1px solid red;
     max-width: 1440px;
   }

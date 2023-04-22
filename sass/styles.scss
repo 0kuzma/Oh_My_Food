@@ -20,10 +20,10 @@ body {
 
 /*****Spinner Loader page ****/
 
-/***.spinner {
+.spinner {
     background-color: #EAEAEA;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     opacity: 0;
     top: 0;
     left: 0;
@@ -32,16 +32,18 @@ body {
     animation: bg 3.3s linear;
     @keyframes bg {
         from {
+            display: block;
             opacity: 100%;
         }
         to {
+            display: none;
             opacity: 0%;
             z-index: -1;
         }
     }
 &__spin {
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     opacity: 0;
     left: 35%;
     right: 0;
@@ -55,16 +57,18 @@ body {
     animation: spin 3.3s linear;
     @keyframes spin {
         from {
+            display: block;
             opacity: 100%;
             transform: rotate(360deg);
         }
         to {
+            display: none;
             opacity: 0%;
             z-index: -1;
         }
     }
     } 
-}  ***/
+}  
 
 /***** Header ****/
 
@@ -120,10 +124,16 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        button {
+        a {
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            color: $bg-white;
+        }
+        .button {
             @include button-violet;
         }
-        button:hover {
+        .button:hover {
             @include button-hov;
         }
     }
@@ -138,6 +148,7 @@ header {
         @include Roboto;
     }
 
+    
     &__info {
         position: relative;
         display: flex;
@@ -153,13 +164,13 @@ header {
             color: $icon-info;
         }
         .fa-dumpster{
-            color: $main-color;
+            color: $icon-info;
         }
         .mr-15 {
             margin-right: 15px;
         }
-        .mr-8 {
-            margin-right: 8px;
+       .mr-8 {
+             margin-right: 8px;
         }
         .number {
             position: absolute;
@@ -171,11 +182,21 @@ header {
             background-color: $main-color;
             width: 24px;
             height: 24px;
-            & p {
+            & h5 {
                 color: #FFFFFF;
             }
         }
+        .logoinfo {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: 30px;
+        }
     }
+    &__info:hover i {
+        color: $main-color;
+    }
+
 }
 
     /****Section restaurant****/
@@ -234,31 +255,25 @@ header {
        }
 
 // Animation coeur  
-      .heart-checkbox {
-        display: none;
-        clip-path: polygon(48% 95%, 94% 51%, 100% 29%, 94% 19%, 88% 13%, 80% 9%, 72% 8%, 64% 8%, 57% 11%, 51% 17%, 48% 22%, 39% 14%, 32% 10%, 26% 8%, 18% 11%, 14% 16%, 12% 23%, 11% 30%, 9% 35%, 8% 41%, 8% 46%);
-      }
-      
-     
-      .heart-checkbox:checked + .heart {
-        position: absolute;
-        left: 88%;
-        top: 83%;
-        width: 33px;
-        height: 35px;
-        clip-path: polygon(50% 96%, 100% 46%, 99% 24%, 92% 13%, 84% 7%, 72% 5%, 61% 8%, 51% 18%, 39% 8%, 27% 6%, 17% 6%, 9% 13%, 2% 22%, 0 31%, 1% 43%, 4% 50%);
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);     
-      }
-    
-    
-      .size {
-        position: absolute;
-        left: 88%;
-        top: 83%;
-        max-width: 33px;
-        height: 35px;
-      }
+     .heart {
+        position: relative;
+        cursor: pointer;
+     }
 
+     svg {
+        width: 30px;
+        position: absolute;
+        right: 50px;
+        bottom: 16px;
+     }
+
+     svg.\.heart-main:hover {
+        position: absolute;
+        fill: transparent;
+        stroke: white;
+        clip-path: polygon(50% 96%, 100% 46%, 99% 24%, 92% 13%, 84% 7%, 72% 5%, 61% 8%, 51% 18%, 39% 8%, 27% 6%, 17% 6%, 9% 13%, 2% 22%, 0 31%, 1% 43%, 4% 50%);
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+     }
     }
 }
 

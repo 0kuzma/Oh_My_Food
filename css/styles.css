@@ -19,51 +19,56 @@ body {
 }
 
 /*****Spinner Loader page ****/
-/***.spinner {
-    background-color: #EAEAEA;
-    position: absolute;
-    z-index: 100;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    animation: bg 3.3s linear;
-    @keyframes bg {
-        from {
-            opacity: 100%;
-        }
-        to {
-            opacity: 0%;
-            z-index: -1;
-        }
-    }
-&__spin {
-    position: fixed;
-    z-index: 100;
-    opacity: 0;
-    left: 35%;
-    right: 0;
-    bottom: 50%;
-    top: 50%;
-    height: 220px;
-    width: 220px;
-    border: 5px solid $tertiary-color;
-    border-color: peru transparent;
-    border-radius: 50%;
-    animation: spin 3.3s linear;
-    @keyframes spin {
-        from {
-            opacity: 100%;
-            transform: rotate(360deg);
-        }
-        to {
-            opacity: 0%;
-            z-index: -1;
-        }
-    }
-    } 
-}  ***/
+.spinner {
+  background-color: #EAEAEA;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: bg 3.3s linear;
+}
+@keyframes bg {
+  from {
+    display: block;
+    opacity: 100%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+.spinner__spin {
+  position: fixed;
+  z-index: 1;
+  opacity: 0;
+  left: 35%;
+  right: 0;
+  bottom: 50%;
+  top: 50%;
+  height: 220px;
+  width: 220px;
+  border: 5px solid #99E2D0;
+  border-color: peru transparent;
+  border-radius: 50%;
+  animation: spin 3.3s linear;
+}
+@keyframes spin {
+  from {
+    display: block;
+    opacity: 100%;
+    transform: rotate(360deg);
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+
 /***** Header ****/
 header {
   width: 100%;
@@ -121,7 +126,13 @@ header img {
   justify-content: center;
   align-items: center;
 }
-.cta__button button {
+.cta__button a {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  color: #FFFFFF;
+}
+.cta__button .button {
   border: none;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -129,7 +140,7 @@ header img {
   color: #FFFFFF;
   padding: 13px 18.75px 13px 18.75px;
 }
-.cta__button button:hover {
+.cta__button .button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(329deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   border-radius: 25px;
@@ -168,7 +179,7 @@ header img {
   color: #7E7E7E;
 }
 .functioning__info .fa-dumpster {
-  color: #9356DC;
+  color: #7E7E7E;
 }
 .functioning__info .mr-15 {
   margin-right: 15px;
@@ -187,8 +198,17 @@ header img {
   width: 24px;
   height: 24px;
 }
-.functioning__info .number p {
+.functioning__info .number h5 {
   color: #FFFFFF;
+}
+.functioning__info .logoinfo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 30px;
+}
+.functioning__info:hover i {
+  color: #9356DC;
 }
 
 /****Section restaurant****/
@@ -252,25 +272,22 @@ header img {
   font-size: 17px;
   margin: 0px 0px 12px 13px;
 }
-.restaurant__card .heart-checkbox {
-  display: none;
-  clip-path: polygon(48% 95%, 94% 51%, 100% 29%, 94% 19%, 88% 13%, 80% 9%, 72% 8%, 64% 8%, 57% 11%, 51% 17%, 48% 22%, 39% 14%, 32% 10%, 26% 8%, 18% 11%, 14% 16%, 12% 23%, 11% 30%, 9% 35%, 8% 41%, 8% 46%);
+.restaurant__card .heart {
+  position: relative;
+  cursor: pointer;
 }
-.restaurant__card .heart-checkbox:checked + .heart {
+.restaurant__card svg {
+  width: 30px;
   position: absolute;
-  left: 88%;
-  top: 83%;
-  width: 33px;
-  height: 35px;
+  right: 50px;
+  bottom: 16px;
+}
+.restaurant__card svg.\.heart-main:hover {
+  position: absolute;
+  fill: transparent;
+  stroke: white;
   clip-path: polygon(50% 96%, 100% 46%, 99% 24%, 92% 13%, 84% 7%, 72% 5%, 61% 8%, 51% 18%, 39% 8%, 27% 6%, 17% 6%, 9% 13%, 2% 22%, 0 31%, 1% 43%, 4% 50%);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
-.restaurant__card .size {
-  position: absolute;
-  left: 88%;
-  top: 83%;
-  max-width: 33px;
-  height: 35px;
 }
 
 /****Section Footer****/

@@ -17,9 +17,9 @@
 
         <!--Mobile first header-->
     <div class="main-container">
-       <!-- <div class="spinner">
+       <!--<div class="spinner">
             <div class="spinner__spin"></div> 
-        </div>-->
+        </div> -->
         <!--header-->
         <header>
             <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood centrer en haut de la page">
@@ -43,11 +43,13 @@
                 <h3>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h3>
             </div>
             <div class="cta__button">
-                <a href="#jump-restaurant">
-                <button>
-                    <span>Explorer nos restaurants</span>
-                </button>
-                </a>
+                
+                <div class="button">
+                    <a href="#jump-restaurant">
+                        <span>Explorer nos restaurants</span>
+                    </a>
+                </div>
+                
             </div>
         </section>
 
@@ -57,24 +59,30 @@
         <div class="flex-row">
             <article class="functioning__info">
                 <div class="number">
-                    <p>1</p>
+                    <h5>1</h5>
                 </div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <p>Choisissez un restaurant</p>
+                <div class="logoinfo">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
             </article>
             <article class="functioning__info">
                 <div class="number">
-                    <p>2</p>
+                    <h5>2</h5>
                 </div>
-                <i class="fa-sharp fa-solid fa-list-ul"></i>
-                <p class="mr-15">Composez votre menu</p>
+                <div class="logoinfo">
+                    <i class="fa-sharp fa-solid fa-list-ul"></i>
+                    <p class="mr-15">Composez votre menu</p>
+                </div>
             </article>
             <article class="functioning__info">
                 <div class="number">
-                    <p>3</p>
+                    <h5>3</h5>
                 </div>
-                <i class="fa-sharp fa-solid fa-dumpster"></i>
-                <p class="mr-8">Dégustez au restaurant</p>
+                <div class="logoinfo">
+                    <i class="fa-sharp fa-solid fa-dumpster"></i>
+                    <p class="mr-8">Dégustez au restaurant</p>
+                </div>
             </article>
         </div>
         </section>
@@ -94,13 +102,10 @@
                     <h3>La palette du goût</h3>
                     <div class="heart">
                         <h4>Ménilmontant</h4>
-                    </div>
-                        <input type="checkbox" class="heart-checkbox" id="gout">
-                        <label for="gout" class="heart">
-                        <svg viewBox="0 0 512 512" class="size heart">
+                        <svg  viewBox="0 0 512 512" class=".heart-main">
                             <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
                         </svg>
-                        </label>
+                    </div>
                 </article>
             </a>
 
@@ -115,13 +120,10 @@
                     <h3>La note enchantée</h3>
                     <div class="heart">
                         <h4>Charonne</h4>
-                    </div>
-                        <input type="checkbox" class="heart-checkbox" id="enchantée">
-                        <label for="enchantée" class="heart">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size heart">
+                        <svg viewBox="0 0 512 512" class=".heart-main">
                             <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
                         </svg>
-                        </label>
+                    </div>
              </article>
             </a>
         </div>
@@ -133,13 +135,10 @@
                     <h3>À la française</h3>
                     <div class="heart">
                         <h4>Cité Rouge</h4>
-                    </div>
-                        <input type="checkbox" class="heart-checkbox" id="française">
-                        <label for="française" class="heart">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size heart">
+                        <svg viewBox="0 0 512 512" class=".heart-main">
                             <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
                         </svg>
-                        </label>
+                    </div>
                 </article>
             </a>
 
@@ -149,13 +148,10 @@
                     <h3>Le délice des sens</h3>
                     <div class="heart">
                         <h4>Folie-Méricourt</h4>
-                    </div>
-                        <input type="checkbox" class="heart-checkbox" id="sens">
-                        <label for="sens" class="heart">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size heart">
+                        <svg viewBox="0 0 512 512" class=".heart-main">
                             <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/>
                         </svg>
-                        </label>
+                    </div>
                 </article>
             </a>
         </div>

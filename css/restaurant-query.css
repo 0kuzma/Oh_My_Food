@@ -23,12 +23,9 @@
   }
   .relative-img .absolute .absolute__title {
     justify-content: center;
-    gap: 0px;
+    gap: 35px;
   }
   .relative-img .absolute .absolute__title .size {
-    left: 66%;
-  }
-  .relative-img .absolute .absolute__title .heart-checkbox:checked + .heart {
     left: 66%;
   }
   .relative-img .absolute .absolute__foodChoice {

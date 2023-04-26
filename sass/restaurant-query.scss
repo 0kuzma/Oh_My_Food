@@ -24,13 +24,10 @@
         max-width: 1055px;
         .absolute__title {
             justify-content: center;
-            gap: 0px;
+            gap: 35px;
             .size {
                 left: 66%;
             }
-            .heart-checkbox:checked + .heart {
-                left: 66%;
-            } 
         }
         .absolute__foodChoice {
             margin-left: 210px;

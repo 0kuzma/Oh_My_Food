@@ -92,6 +92,15 @@ main {
             &__foodChoice {
                 margin: 42px 13px 40px 13px;
             }
+            .anim-one {
+                animation: 1.2s first linear;
+            }
+            .anim-twoo {
+                animation: 2.2s twoo ease-in-out;
+            }
+            .anim-three {
+                animation: 3.5s three ease-in-out;
+            }
             &__soustitle {
                 border-bottom: 3px solid $border-soustitle;
                 width: 40px;
@@ -152,6 +161,42 @@ main {
             }
 
             //animation menu
+            @keyframes first {
+                0% {
+                    opacity: 0%;
+                }
+
+                50% {
+                    opacity: 50%;
+                } 
+                100% {
+                    opacity: 100%;
+                }
+            }
+            @keyframes twoo {
+                0% {
+                    opacity: 0%;
+                }
+
+                50% {
+                    opacity: 0%;
+                } 
+                100% {
+                    opacity: 100%;
+                }
+            }
+            @keyframes three {
+                0% {
+                    opacity: 0%;
+                }
+
+                50% {
+                    opacity: 0%;
+                } 
+                100% {
+                    opacity: 100%;
+                }
+            }
             .absolute__card:hover {
                 box-shadow: inset -70px 0 0 0 #99E2D0;
             }

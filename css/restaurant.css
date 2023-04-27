@@ -88,6 +88,15 @@ main .relative-img .absolute__title svg.\.heart-main:hover {
 main .relative-img .absolute__foodChoice {
   margin: 42px 13px 40px 13px;
 }
+main .relative-img .absolute .anim-one {
+  animation: 1.2s first linear;
+}
+main .relative-img .absolute .anim-twoo {
+  animation: 2.2s twoo ease-in-out;
+}
+main .relative-img .absolute .anim-three {
+  animation: 3.5s three ease-in-out;
+}
 main .relative-img .absolute__soustitle {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
@@ -153,6 +162,39 @@ main .relative-img .absolute__card .price .price__ff {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15.04px;
+}
+@keyframes first {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes twoo {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes three {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 main .relative-img .absolute .absolute__card:hover {
   box-shadow: inset -70px 0 0 0 #99E2D0;

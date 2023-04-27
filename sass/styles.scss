@@ -185,7 +185,6 @@ header {
         }
         .button:hover {
             @include button-hov;
-            
         }
     }
 }
@@ -308,8 +307,7 @@ header {
 // Animation coeur  
      .heart {
         position: relative;
-        cursor: pointer;
-        
+        cursor: pointer;  
      }
 
      svg {

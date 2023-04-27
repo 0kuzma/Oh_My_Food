@@ -93,7 +93,7 @@ main {
                 margin: 42px 13px 40px 13px;
             }
             .anim-one {
-                animation: 1.2s first linear;
+                animation: 1.2s firstt linear;
             }
             .anim-twoo {
                 animation: 2.2s twoo ease-in-out;
@@ -161,7 +161,7 @@ main {
             }
 
             //animation menu
-            @keyframes first {
+            @keyframes firstt {
                 0% {
                     opacity: 0%;
                 }

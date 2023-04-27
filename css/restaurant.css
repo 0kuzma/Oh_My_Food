@@ -89,7 +89,7 @@ main .relative-img .absolute__foodChoice {
   margin: 42px 13px 40px 13px;
 }
 main .relative-img .absolute .anim-one {
-  animation: 1.2s first linear;
+  animation: 1.2s firstt linear;
 }
 main .relative-img .absolute .anim-twoo {
   animation: 2.2s twoo ease-in-out;
@@ -163,7 +163,7 @@ main .relative-img .absolute__card .price .price__ff {
   font-weight: 700;
   font-size: 15.04px;
 }
-@keyframes first {
+@keyframes firstt {
   0% {
     opacity: 0%;
   }

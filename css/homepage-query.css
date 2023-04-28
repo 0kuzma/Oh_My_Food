@@ -69,6 +69,7 @@
   .restaurant__card .news__bg {
     left: 75%;
   }
+  /***Section Footer***/
 }
 @media (min-width: 767px) and (max-width: 1105px) {
   .restaurant__card .news__bg {
@@ -80,42 +81,42 @@
     padding-right: 0px;
   }
 }
-/***Section Footer***/
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  max-width: 1440px;
-  margin: auto;
-  height: 114px;
-  padding: 0;
+@media (min-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    height: 114px;
+    padding: 0;
+  }
+  footer h2 {
+    padding-top: 67px;
+    padding-right: 26.42px;
+    padding-bottom: 30px;
+    padding-left: 96px;
+  }
+  footer .desktop-footer {
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  footer .desktop-footer .footer__up {
+    padding-top: 64px;
+    flex-direction: row;
+    gap: 17px;
+  }
+  footer .desktop-footer .footer__up .list p {
+    margin-left: 10px;
+  }
+  footer .desktop-footer .footer__down {
+    padding-top: 64px;
+    flex-direction: row;
+    gap: 17px;
+  }
 }
-footer h2 {
-  padding-top: 67px;
-  padding-right: 26.42px;
-  padding-bottom: 30px;
-  padding-left: 96px;
-}
-footer .desktop-footer {
-  display: flex;
-  gap: 70px;
-  flex-direction: row;
-  align-items: baseline;
-}
-footer .desktop-footer .footer__up {
-  padding-top: 64px;
-  flex-direction: row;
-  gap: 17px;
-}
-footer .desktop-footer .footer__up .list p {
-  margin-left: 10px;
-}
-footer .desktop-footer .footer__down {
-  padding-top: 64px;
-  flex-direction: row;
-  gap: 17px;
-}
-
 @media (min-width: 1105px) {
   .restaurant {
     padding: 29px 55px 29px 55px;

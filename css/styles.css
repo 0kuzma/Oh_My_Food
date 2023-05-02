@@ -42,7 +42,6 @@ body {
     opacity: 1;
   }
   100% {
-    background-color: whitesmoke;
     z-index: -555;
     opacity: 0;
     display: none;
@@ -51,7 +50,7 @@ body {
 .text {
   width: 50%;
   margin: auto;
-  color: #666;
+  color: #7E7E7E;
   text-align: center;
   top: 15%;
   position: sticky;
@@ -72,7 +71,7 @@ body {
     color: #99E2D0;
   }
   100% {
-    color: white;
+    color: #FFFFFF;
   }
 }
 .ring {
@@ -104,7 +103,7 @@ body {
 }
 /***** Header ****/
 header {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -320,13 +319,10 @@ header img {
 }
 .restaurant__card svg.\.heart-main {
   opacity: 100%;
-  transition: opacity 1s ease-in-out;
 }
 .restaurant__card svg.\.heart-main:hover {
   position: absolute;
   fill: transparent;
-  transition: opacity 1s ease-in-out;
-  stroke: red;
   clip-path: polygon(50% 96%, 100% 46%, 99% 24%, 92% 13%, 84% 7%, 72% 5%, 61% 8%, 51% 18%, 39% 8%, 27% 6%, 17% 6%, 9% 13%, 2% 22%, 0 31%, 1% 43%, 4% 50%);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }

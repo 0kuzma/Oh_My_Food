@@ -76,12 +76,9 @@ main .relative-img .absolute__title svg {
 }
 main .relative-img .absolute__title svg.\.heart-main {
   opacity: 100%;
-  transition: opacity 1s ease-in-out;
 }
 main .relative-img .absolute__title svg.\.heart-main:hover {
   fill: transparent;
-  transition: opacity 1s ease-in-out;
-  stroke: red;
   clip-path: polygon(50% 96%, 100% 46%, 99% 24%, 92% 13%, 84% 7%, 72% 5%, 61% 8%, 51% 18%, 39% 8%, 27% 6%, 17% 6%, 9% 13%, 2% 22%, 0 31%, 1% 43%, 4% 50%);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
@@ -89,13 +86,13 @@ main .relative-img .absolute__foodChoice {
   margin: 42px 13px 40px 13px;
 }
 main .relative-img .absolute .anim-one {
-  animation: 1.2s firstt linear;
+  animation: 0.8s firstt linear;
 }
 main .relative-img .absolute .anim-twoo {
-  animation: 2.2s twoo ease-in-out;
+  animation: 1.2s twoo ease-in-out;
 }
 main .relative-img .absolute .anim-three {
-  animation: 3.5s three ease-in-out;
+  animation: 2.2s three ease-in-out;
 }
 main .relative-img .absolute__soustitle {
   border-bottom: 3px solid #99E2D0;
@@ -127,7 +124,7 @@ main .relative-img .absolute__card .round {
   right: -2%;
   top: 35%;
   border-radius: 100%;
-  background-color: white;
+  background-color: #FFFFFF;
   height: auto;
   padding: 3px 3px;
   width: 15px;
@@ -201,7 +198,7 @@ main .relative-img .absolute .absolute__card:hover {
 }
 main .relative-img .absolute .absolute__card:hover .price .price__ff {
   transform: translate(-138%);
-  background: white;
+  background: #FFFFFF;
 }
 main .relative-img .absolute .absolute__card:hover .round {
   display: block;
@@ -257,7 +254,7 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 18px;
-  color: white;
+  color: #FFFFFF;
 }
 footer .footer__up {
   display: flex;
